@@ -22,6 +22,7 @@ import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
 
+import cc.derick.YouTubeMemberEmojiDownloader.AppConfig;
 import cc.derick.YouTubeMemberEmojiDownloader.modal.ImgData;
 import cc.derick.YouTubeMemberEmojiDownloader.service.DataProcessedService;
 import cc.derick.YouTubeMemberEmojiDownloader.service.DownloadService;
@@ -37,7 +38,7 @@ public class DownloaderUI {
         
         Display display = new Display();
         Shell shell = new Shell(display);
-        shell.setText("會員表情下載器");
+        shell.setText(String.format("會員表情下載器 %s", AppConfig.VERSION));
         shell.setSize(600, 600);
         shell.setLayout(new GridLayout(3, false));
         

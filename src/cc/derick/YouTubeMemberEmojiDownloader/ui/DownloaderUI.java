@@ -1,17 +1,23 @@
 package cc.derick.YouTubeMemberEmojiDownloader.ui;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicLong;
 
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.custom.StyledText;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
-import org.eclipse.swt.layout.RowData;
-import org.eclipse.swt.layout.RowLayout;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.widgets.Composite;
@@ -23,16 +29,26 @@ import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
 
 import cc.derick.YouTubeMemberEmojiDownloader.AppConfig;
+import cc.derick.YouTubeMemberEmojiDownloader.TaskCompletionCallback;
 import cc.derick.YouTubeMemberEmojiDownloader.modal.ImgData;
 import cc.derick.YouTubeMemberEmojiDownloader.service.DataProcessedService;
 import cc.derick.YouTubeMemberEmojiDownloader.service.DownloadService;
 
 public class DownloaderUI {
 	
+	private static ExecutorService executorService;
+	
+	static {
+        initializeThreadPool();
+    }
+	
 	private static DownloadService downloadService = new DownloadService();
 	private static DataProcessedService dataProcessedService = new DataProcessedService();
 	
+	private static InputWindow inputWindow;
+	
 	private static AtomicBoolean isStop = new AtomicBoolean(false);
+	
 
     public static void main(String args[]) {
         
@@ -74,9 +90,10 @@ public class DownloaderUI {
         textAreaButton.setEnabled(false);  // Initially disabled
         
         // 中間 Console 區塊
-        Text console = new Text(shell, SWT.MULTI | SWT.BORDER | SWT.V_SCROLL | SWT.WRAP);
+        StyledText console = new StyledText(shell, SWT.MULTI | SWT.BORDER | SWT.V_SCROLL | SWT.WRAP);
         console.setEditable(false);
         console.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 4, 1));  // span 4 columns
+        Console.init(console);
         
         // 下方按鈕
         Composite bottomPanel = new Composite(shell, SWT.NONE);
@@ -87,6 +104,8 @@ public class DownloaderUI {
         
         Button stopButton = new Button(bottomPanel, SWT.PUSH);
         stopButton.setText("停止");
+        stopButton.setEnabled(true);
+        
         
         // 事件處理
         fileButton.addListener(SWT.Selection, e -> {
@@ -116,42 +135,83 @@ public class DownloaderUI {
         
         startButton.addListener(SWT.Selection, e -> {
         	String selectedFile = fileField.getText();
-            String outputPath = outPutField.getText();
+        	String outputPathString = outPutField.getText().trim();
             int selectedIndex = formatCombo.getSelectionIndex();
             
-            if (selectedFile.isEmpty() || outputPath.isEmpty()) {
-                console.append("請選擇文件和輸出資料夾\n");
+            if (selectedFile.isEmpty() || outputPathString.isEmpty()) {
+                Console.err("請選擇文件和輸出資料夾\n");
                 return;
             }
             
-            console.append("開始下載...\n");
+            if (!isValidPath(outputPathString)) {
+            	Console.err("路徑包含非法字符，請重新輸入\n");
+                return;
+            }
+            
+            Path outputPath = Paths.get(outputPathString);
+            
+            if (!Files.exists(outputPath)) {
+                try {
+                    Files.createDirectories(outputPath); // 如果不存在，创建该目录
+                    Console.out("已成功創建輸出資料夾: " + outputPath.toString() + "\n");
+                } catch (IOException ex) {
+                    Console.err("創建資料夾時出現錯誤: " + ex.getMessage() + "\n");
+                    return;
+                }
+            }
+            
+            Console.out("開始下載...\n");
+            stopButton.setEnabled(false);
+            startButton.setEnabled(true);
             
             List<ImgData> imgDatas = new ArrayList<>();
             // 邏輯預留區
             if(selectedIndex == 0) {
-            	imgDatas = dataProcessedService.htmlParser(selectedFile, console);
+            	imgDatas = dataProcessedService.htmlParser(selectedFile, outputPath);
             } else if (selectedIndex == 2) {				
-            	imgDatas = dataProcessedService.txtParser(selectedFile, console);
+            	imgDatas = dataProcessedService.txtParser(selectedFile, outputPath);
 			}
             
-            handleProcessedFormat(imgDatas, console, outputPath);
+            handleProcessedFormat(imgDatas, new TaskCompletionCallback() {
+                @Override
+                public void onTaskCompleted() {
+                    
+                    Display.getDefault().asyncExec(() -> {
+                        startButton.setEnabled(true);
+                        stopButton.setEnabled(false);
+                    });
+                }
+            });
             
         });
 
         stopButton.addListener(SWT.Selection, e -> {
-            console.append("停止下載...\n");
+        	Console.out("停止下載中...\n");
             // 邏輯預留區
             isStop.set(true);
+            stopButton.setEnabled(true);
+            startButton.setEnabled(false);
         });
         
         formatCombo.addSelectionListener(new SelectionAdapter() {
         	
         	@Override
             public void widgetSelected(SelectionEvent e) {
-                if (formatCombo.getSelectionIndex() == 1) {
-                    textAreaButton.setEnabled(true);
-                } else {
+                if (formatCombo.getSelectionIndex() == 2) {
+                	
                     textAreaButton.setEnabled(false);
+                    startButton.setEnabled(true);
+                    fileButton.setEnabled(true);
+                    fileField.setEnabled(true);
+                    fileField.setText("");
+                    
+                } else {
+                	
+                    textAreaButton.setEnabled(true);
+                    startButton.setEnabled(false);
+                    fileButton.setEnabled(false);
+                    fileField.setEnabled(false);
+                    
                 }
             }
         	
@@ -162,48 +222,13 @@ public class DownloaderUI {
         textAreaButton.addSelectionListener(new SelectionAdapter() {
             @Override
             public void widgetSelected(SelectionEvent e) {
-            	
-                Shell inputShell = new Shell(shell, SWT.TITLE | SWT.CLOSE | SWT.APPLICATION_MODAL);
-                inputShell.setText("輸入");
-                inputShell.setSize(650, 700);
-                inputShell.setLayout(new GridLayout(1, false));
 
-                Text textArea = new Text(inputShell, SWT.BORDER | SWT.MULTI | SWT.V_SCROLL | SWT.WRAP);
-                textArea.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true));
-        
-                Composite buttonComposite = new Composite(inputShell, SWT.NONE);
-                buttonComposite.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false)); // This stays as GridData for the composite
-                RowLayout rowLayout = new RowLayout(SWT.HORIZONTAL);  
-                rowLayout.justify = true;
-                buttonComposite.setLayout(rowLayout);
-
-                Button submitButton = new Button(buttonComposite, SWT.PUSH);
-                submitButton.setText("送出");
-
-                RowData rowData = new RowData();
-                rowData.width = SWT.DEFAULT; 
-                submitButton.setLayoutData(rowData);
-
-                submitButton.addSelectionListener(new SelectionAdapter() {
-                    @Override
-                    public void widgetSelected(SelectionEvent e) {
-                    	String outputPath = outPutField.getText();
-                        String text = textArea.getText();
-                        
-                        if(outputPath.isEmpty() || text.isEmpty()) {
-                        	inputShell.close();
-                        	console.append("請選擇輸出路徑和輸入Html節點\n");
-                        	return;
-                        }
-                        
-                        inputShell.close();
-                        console.append("開始下載...\n");
-                        List<ImgData> imgDatas = dataProcessedService.inputParser(text, console);
-                        handleProcessedFormat(imgDatas, console, outputPath);
-                    }
-                });
-
-                inputShell.open();
+                if (inputWindow == null) {
+                    inputWindow = new InputWindow(outPutField, dataProcessedService, shell, 
+                    					startButton, startButton);
+                }
+                
+                inputWindow.open();
             }
         });
         
@@ -218,20 +243,68 @@ public class DownloaderUI {
         display.dispose();
     }
     
-    private static void handleProcessedFormat(List<ImgData> imgDatas, Text console, String outputPath) {
+    protected static void handleProcessedFormat(List<ImgData> imgDatas, TaskCompletionCallback callback) {
     	
-    	long totalLines = imgDatas.size();
-    	long count = imgDatas.stream()
-	    			.map(imgData -> {
-	    				if(isStop.get()) {
-	    					return 0;
-	    				}		
-	    				boolean success = downloadService.downloadAndSaveImage(imgData, console, outputPath);
-	    				return success ? 1 : 0;
-	    			})
-	    			.reduce(0, Integer::sum);
+    	AtomicLong successCount = new AtomicLong(0);
+        AtomicLong failureCount = new AtomicLong(0);
+        
+        CountDownLatch latch = new CountDownLatch(imgDatas.size());
     	
-    	console.append(String.format("下載成功: %d, 下載失敗; %d%n", count, totalLines - count));
+        for (ImgData imgData : imgDatas) {
+        	
+        	if (isStop.get()) {
+        		latch.countDown();
+                continue;
+            }
+        	
+        	executorService.submit(() -> {
+                boolean success = downloadService.downloadAndSaveImage(imgData);
+
+                if (success) {
+                    successCount.incrementAndGet();
+                } else {
+                    failureCount.incrementAndGet();
+                }
+
+                latch.countDown();
+            });
+        	
+        }
+        
+        
+        executorService.submit(() -> {
+            try {
+                latch.await();
+            } catch (InterruptedException e) {
+                Console.err("線程等待錯誤" + e);
+            }
+
+            long success = successCount.get();
+            long failure = failureCount.get();
+
+            Display.getDefault().asyncExec(() -> {
+                Console.out(String.format("下载成功: %d, 下载失败: %d%n", success, failure));
+                if (callback != null) {
+                    callback.onTaskCompleted();
+                }
+            });
+        });
     	
     }
+    
+    private static void initializeThreadPool() {
+        executorService = Executors.newFixedThreadPool(AppConfig.getThreadPoolSize());  
+    }
+    
+    private static boolean isValidPath(String path) {
+
+    	String invalidChars = "[<>\"|?*]";
+
+        if (path.matches(".*" + invalidChars + ".*")) {
+            return false;
+        }
+
+        return true;
+    }
+    
 }

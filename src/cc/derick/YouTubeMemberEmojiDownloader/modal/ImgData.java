@@ -1,21 +1,24 @@
 package cc.derick.YouTubeMemberEmojiDownloader.modal;
 
+import java.net.URL;
+import java.nio.file.Path;
+
 public class ImgData {
 	
-	private String alt;
+	private Path filePath;
 	
-	private String src;
+	private URL src;
 
-	public ImgData(String alt, String src) {
-		this.alt = alt;
+	public ImgData(Path filePath, URL src) {
+		this.filePath = filePath;
 		this.src = src;
 	}
 
-	public String getAlt() {
-		return alt;
+	public Path getFilePath() {
+		return filePath;
 	}
 
-	public String getSrc() {
+	public URL getSrc() {
 		return src;
 	}
 

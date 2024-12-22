@@ -2,7 +2,7 @@ package cc.derick.YouTubeMemberEmojiDownloader;
 
 public class AppConfig {
 	
-	public static final String VERSION = "1.1.0";
+	public static final String VERSION = "1.1.1";
 	private static int threadPoolSize = 10;
 	
 	public static int getThreadPoolSize() {

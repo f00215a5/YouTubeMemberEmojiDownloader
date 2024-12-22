@@ -94,3 +94,291 @@ Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App
 Manifest-Version: 1.0     
 Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar     
 Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App     
+Manifest-Version: 1.0 
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar 
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App 
+Manifest-Version: 1.0  
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar  
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App  
+Manifest-Version: 1.0  
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar  
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App  
+Manifest-Version: 1.0   
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar   
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App   
+Manifest-Version: 1.0  
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar  
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App  
+Manifest-Version: 1.0   
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar   
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App   
+Manifest-Version: 1.0   
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar   
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App   
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0  
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar  
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App  
+Manifest-Version: 1.0   
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar   
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App   
+Manifest-Version: 1.0   
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar   
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App   
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0   
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar   
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App   
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0     
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar     
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App     
+Manifest-Version: 1.0  
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar  
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App  
+Manifest-Version: 1.0   
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar   
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App   
+Manifest-Version: 1.0   
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar   
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App   
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0   
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar   
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App   
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0     
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar     
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App     
+Manifest-Version: 1.0   
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar   
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App   
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0     
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar     
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App     
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0     
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar     
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App     
+Manifest-Version: 1.0     
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar     
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App     
+Manifest-Version: 1.0      
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar      
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App      
+Manifest-Version: 1.0 
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar 
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App 
+Manifest-Version: 1.0  
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar  
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App  
+Manifest-Version: 1.0  
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar  
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App  
+Manifest-Version: 1.0   
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar   
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App   
+Manifest-Version: 1.0  
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar  
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App  
+Manifest-Version: 1.0   
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar   
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App   
+Manifest-Version: 1.0   
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar   
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App   
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0  
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar  
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App  
+Manifest-Version: 1.0   
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar   
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App   
+Manifest-Version: 1.0   
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar   
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App   
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0   
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar   
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App   
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0     
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar     
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App     
+Manifest-Version: 1.0  
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar  
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App  
+Manifest-Version: 1.0   
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar   
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App   
+Manifest-Version: 1.0   
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar   
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App   
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0   
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar   
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App   
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0     
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar     
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App     
+Manifest-Version: 1.0   
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar   
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App   
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0     
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar     
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App     
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0     
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar     
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App     
+Manifest-Version: 1.0     
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar     
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App     
+Manifest-Version: 1.0      
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar      
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App      
+Manifest-Version: 1.0  
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar  
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App  
+Manifest-Version: 1.0   
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar   
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App   
+Manifest-Version: 1.0   
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar   
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App   
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0   
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar   
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App   
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0     
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar     
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App     
+Manifest-Version: 1.0   
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar   
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App   
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0     
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar     
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App     
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0     
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar     
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App     
+Manifest-Version: 1.0     
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar     
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App     
+Manifest-Version: 1.0      
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar      
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App      
+Manifest-Version: 1.0   
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar   
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App   
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0     
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar     
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App     
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0     
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar     
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App     
+Manifest-Version: 1.0     
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar     
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App     
+Manifest-Version: 1.0      
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar      
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App      
+Manifest-Version: 1.0    
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar    
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App    
+Manifest-Version: 1.0     
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar     
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App     
+Manifest-Version: 1.0     
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar     
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App     
+Manifest-Version: 1.0      
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar      
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App      
+Manifest-Version: 1.0     
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar     
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App     
+Manifest-Version: 1.0      
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar      
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App      
+Manifest-Version: 1.0      
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar      
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App      
+Manifest-Version: 1.0       
+Class-Path: lib\customizer.jar lib\jsoup-1.18.1.jar lib\org.eclipse.swt.win32.win32.x86_64-3.110.0.jar       
+Main-Class: cc.derick.YouTubeMemberEmojiDownloader.App       

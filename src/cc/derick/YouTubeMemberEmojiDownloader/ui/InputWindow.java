@@ -123,7 +123,7 @@ public class InputWindow {
 	
     private static boolean isValidPath(String path) {
 
-        String invalidChars = "[<>:\"/\\|?*]";
+        String invalidChars = "[<>\"|?*]";
         
         if (path.matches(".*" + invalidChars + ".*")) {
             return false;

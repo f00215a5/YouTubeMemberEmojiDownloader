@@ -6,6 +6,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -22,6 +23,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
 import cc.derick.YouTubeMemberEmojiDownloader.modal.ImgData;
+import cc.derick.YouTubeMemberEmojiDownloader.modal.VideoInfoModal;
 import cc.derick.YouTubeMemberEmojiDownloader.ui.Console;
 import cc.derick.YouTubeMemberEmojiDownloader.util.MimeTypeUtils;
 
@@ -206,6 +208,42 @@ public class DataProcessedService {
 		
 	}
 	
+	public List<ImgData> viedoInfoParser(List<VideoInfoModal> infoList, Path outputPath) {
+		
+		List<ImgData> imgDatas = new ArrayList<>();
+		loadExistingImagePaths(outputPath);
+		
+		infoList.forEach(info -> {
+			URL url = checkURL(info.getThumbnailUrl());
+			
+			if(url == null) {
+				return;
+			}
+			
+			String fileName = info.getTitle().replaceAll("/", "⧸").replaceAll("\\\\", "∖")
+							.replaceAll(":", "：").replaceAll("\\?", "？")+
+							" [" + info.getVideoId() + "]";
+			
+			String extension = getExtension(url);
+			
+			if(extension == null) {
+				return;
+			}
+			
+			Path path = getUniqueFilePath(outputPath, fileName, extension);
+			
+			if(path == null) {
+				return;
+			}
+            
+			imgDatas.add(new ImgData(path, url));
+			
+		});
+				
+		return imgDatas;
+		
+	}
+	
 	public Path getUniqueFilePath(Path outputPath, String alt, String extension) {
 			
 			Path outputFile;
@@ -233,6 +271,13 @@ public class DataProcessedService {
 				Console.err(String.format("檔名重複衝突: %s %n", alt));
 				return null;
 			}
+			
+			try {
+		        String normalizedPath = new String(outputFile.toString().getBytes(StandardCharsets.UTF_8), StandardCharsets.UTF_8);
+		        outputFile = Paths.get(normalizedPath);
+		    } catch (Exception e) {
+		        e.printStackTrace();
+		    }
 
 			existingImagePaths.add(outputFile);
 		    return outputFile;

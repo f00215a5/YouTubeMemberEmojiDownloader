@@ -42,6 +42,7 @@ public class Console {
             console.setForeground(display.getSystemColor(color));
             console.append(message);
             console.setCaretOffset(console.getText().length());
+            console.setTopIndex(console.getLineCount() - 1);
         }
     }
 

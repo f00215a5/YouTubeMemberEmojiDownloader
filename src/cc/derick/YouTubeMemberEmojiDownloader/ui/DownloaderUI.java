@@ -263,6 +263,11 @@ public class DownloaderUI {
         
         shell.open();
         
+        shell.addListener(SWT.Dispose, e -> {
+            display.dispose();
+            System.exit(0);
+        });
+        
         while (!shell.isDisposed()) {
             if (!display.readAndDispatch()) {
                 display.sleep();

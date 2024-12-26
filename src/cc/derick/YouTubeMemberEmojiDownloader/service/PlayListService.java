@@ -12,6 +12,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -57,7 +58,9 @@ public class PlayListService {
 		    	
 		    	if (isThumbnail) {
 		            JSONObject thumbnails = item.getJSONObject("thumbnails");
-		            String thumbnailUrl = thumbnails.getJSONObject("maxres").getString("url");
+		            String thumbnailUrl = Optional.ofNullable(thumbnails.optJSONObject("maxres"))
+		                    				.map(maxres -> maxres.optString("url", null))
+		                    				.orElse(thumbnails.getJSONObject("high").getString("url"));
 		            
 		            videoInfo.setThumbnailUrl(thumbnailUrl);
 		        }

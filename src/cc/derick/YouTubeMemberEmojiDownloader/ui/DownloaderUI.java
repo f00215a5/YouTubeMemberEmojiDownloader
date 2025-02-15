@@ -181,7 +181,8 @@ public class DownloaderUI {
                 }
             }
             
-            Console.out("開始下載...\n");
+            Console.out("開始下載..." + System.lineSeparator());
+            Display.getDefault().update();
             stopButton.setEnabled(false);
             startButton.setEnabled(true);
             

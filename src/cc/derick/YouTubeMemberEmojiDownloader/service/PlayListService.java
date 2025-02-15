@@ -177,7 +177,7 @@ public class PlayListService {
 	            }
 	        }
 	        
-	        Console.out("文件输出完成: " + outputFile.toAbsolutePath());
+	        Console.out("文件输出完成: " + outputFile.toAbsolutePath() + System.lineSeparator());
 	        
 	    } catch (IOException e) {
 	    	

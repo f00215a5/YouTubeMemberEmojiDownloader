@@ -4,6 +4,7 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.net.URL;
 import java.nio.file.Path;
+import java.util.concurrent.CompletableFuture;
 
 import org.eclipse.swt.widgets.Display;
 

@@ -68,8 +68,15 @@ public class PlayListService {
 		    	if (isFileName) {
 		            
 		            String fileName = publishedAt +
-		            					title.replaceAll("/", "⧸").replaceAll(":", "：").replaceAll("\\?", "？")
-		            					.replaceAll("\\\\", "∖") +
+		            					title.replaceAll("/", "⧸")
+		            						.replaceAll(":", "：")
+		            						.replaceAll("\\?", "？")
+		            						.replaceAll("\\\\", "∖")
+		            						.replace("\"", "＂")
+		            						.replace("<", "＜")
+		            				        .replace(">", "＞")
+		            				        .replace("|", "｜")
+		            						+
 		            					" [" + videoId + "]" +
 		            					".mp4";
 

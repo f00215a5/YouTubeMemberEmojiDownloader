@@ -220,8 +220,15 @@ public class DataProcessedService {
 				return;
 			}
 			
-			String fileName = info.getTitle().replaceAll("/", "⧸").replaceAll("\\\\", "∖")
-							.replaceAll(":", "：").replaceAll("\\?", "？")+
+			String fileName = info.getTitle()
+								.replaceAll("/", "⧸")
+								.replaceAll(":", "：")
+								.replaceAll("\\?", "？")
+								.replaceAll("\\\\", "∖")
+								.replace("\"", "＂")
+								.replace("<", "＜")
+						        .replace(">", "＞")
+						        .replace("|", "｜")+
 							" [" + info.getVideoId() + "]";
 			
 			String extension = getExtension(url);

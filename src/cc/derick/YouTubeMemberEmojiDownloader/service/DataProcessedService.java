@@ -228,7 +228,9 @@ public class DataProcessedService {
 								.replace("\"", "＂")
 								.replace("<", "＜")
 						        .replace(">", "＞")
-						        .replace("|", "｜")+
+						        .replace("|", "｜")
+						        .replace("*","＊")
+						        +
 							" [" + info.getVideoId() + "]";
 			
 			String extension = getExtension(url);

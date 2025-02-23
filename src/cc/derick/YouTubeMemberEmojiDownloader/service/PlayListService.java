@@ -76,6 +76,7 @@ public class PlayListService {
 		            						.replace("<", "＜")
 		            				        .replace(">", "＞")
 		            				        .replace("|", "｜")
+		            				        .replace("*","＊")
 		            						+
 		            					" [" + videoId + "]" +
 		            					".mp4";
